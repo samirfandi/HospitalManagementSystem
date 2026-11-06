@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajouter patient</title>
+</head>
+<body>
+    <div layout:fragment="content">
+
+
+        <div class="card">
+            <div class="card-header"> Modifier les informations du patient</div>
+
+            
+            <div class="card-body">
+                <form method="post" th:action="@{/user/validateUpdate}" th:object="${patient}" class="row g-2">
+                    
+                    <div>
+                        
+                        <input type="hidden" th:field="*{id}">
+                    </div>
+                    <div>
+                        <label> Nom</label>
+                        <input type="text" th:field="*{nom}" th:errorclass="is-invalid"/>
+                         <div  th:errors="${patient.nom}"  class="invalid-feedback" ></div>
+                    </div>
+
+                    <div>
+                        <label> prenom</label>
+                        <input type="text" th:field="*{prenom}" th:errorclass="is-invalid"/>
+                         <div class="invalid-feedback" th:errors="${patient.prenom}"></div>
+                    </div>
+
+                    <div>
+                        <label> Date de naissance</label>
+                        <input type="date" th:field="*{dateNaissance}" />
+                    </div>
+                    <div>
+                        <label > Malade</label>
+                        <input type="checkbox"  value="true" th:field="*{malade}"/>
+                    </div>
+                    <div>
+                        <label >Score</label>
+                        <input type="number" name="score" value="0" th:field="*{score}" th:errorclass="is-invalid"/>
+                        <div class="invalid-feedback" th:errors="${patient.score}"></div>
+                    </div>
+                    <div>
+                         <button type="submit" class="btn btn-success" > sauvegarder </button>
+                    </div>
+                   
+        </form>
+            </div>
+        </div>
+
+       
+        
+
+    </div>
+    
+</body>
+</html>

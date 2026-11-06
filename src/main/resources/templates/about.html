@@ -1,0 +1,773 @@
+
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Hospital Management System</title>
+</head>
+
+<body>
+
+<div layout:fragment="content">
+
+    <!-- About Hero Section -->
+    <section class="container py-5">
+
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-primary-subtle text-primary mb-3">
+                    About the Project
+                </span>
+
+                <h1 class="display-5 fw-bold mb-4">
+                    Hospital Management System (HMS)
+                </h1>
+
+                <p class="lead text-muted">
+                    A full-stack web application designed to simplify
+                    hospital patient management through a secure,
+                    organized, and user-friendly interface.
+                </p>
+
+                <p class="text-muted">
+                    Built with the Spring ecosystem, this project
+                    demonstrates the integration of backend development,
+                    database management, authentication, authorization,
+                    and server-side rendering.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-4">
+
+                    <span class="badge text-bg-primary">Spring MVC</span>
+                    <span class="badge text-bg-success">Spring Data JPA</span>
+                    <span class="badge text-bg-dark">Spring Security</span>
+                    <span class="badge text-bg-info">Thymeleaf</span>
+                    <span class="badge text-bg-secondary">Bootstrap</span>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="card border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <div class="text-center mb-4">
+
+                            <div class="bg-primary-subtle rounded-circle
+                                        d-inline-flex align-items-center
+                                        justify-content-center"
+                                 style="width: 80px; height: 80px;">
+
+                                <i class="fas fa-hospital fa-2x text-primary"></i>
+
+                            </div>
+
+                            <h4 class="fw-bold mt-3">
+                                Project Overview
+                            </h4>
+
+                            <p class="text-muted mb-0">
+                                A complete patient management solution
+                            </p>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="d-flex justify-content-between mb-3">
+
+                            <span class="text-muted">
+                                Architecture
+                            </span>
+
+                            <span class="fw-semibold">
+                                Full Stack MVC
+                            </span>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-3">
+
+                            <span class="text-muted">
+                                Backend
+                            </span>
+
+                            <span class="fw-semibold">
+                                Spring Boot
+                            </span>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-3">
+
+                            <span class="text-muted">
+                                Database
+                            </span>
+
+                            <span class="fw-semibold">
+                                H2 / MySQL
+                            </span>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+
+                            <span class="text-muted">
+                                Security
+                            </span>
+
+                            <span class="fw-semibold">
+                                Role-Based Access
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Project Features -->
+    <section class="bg-body-tertiary py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="fw-bold">
+                    What Does This Project Offer?
+                </h2>
+
+                <p class="text-muted">
+                    Essential features for managing patient information
+                    efficiently and securely.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Patient Management -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                        <div class="card-body p-4">
+
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-users fa-2x"></i>
+                            </div>
+
+                            <h5 class="fw-bold">
+                                Patient Management
+                            </h5>
+
+                            <p class="text-muted mb-0">
+                                View, manage, and update patient
+                                information through an organized
+                                management interface.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Authentication -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                        <div class="card-body p-4">
+
+                            <div class="text-success mb-3">
+                                <i class="fas fa-user-shield fa-2x"></i>
+                            </div>
+
+                            <h5 class="fw-bold">
+                                Authentication & Security
+                            </h5>
+
+                            <p class="text-muted mb-0">
+                                Secure access using Spring Security
+                                with authentication and
+                                role-based authorization.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Roles -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                        <div class="card-body p-4">
+
+                            <div class="text-warning mb-3">
+                                <i class="fas fa-user-lock fa-2x"></i>
+                            </div>
+
+                            <h5 class="fw-bold">
+                                Role-Based Access
+                            </h5>
+
+                            <p class="text-muted mb-0">
+                                Different permissions for administrators
+                                and regular users to ensure
+                                controlled access to features.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Technologies -->
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Technologies & Tools
+            </h2>
+
+            <p class="text-muted">
+                Built using modern Java technologies and frameworks.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Backend -->
+            <div class="col-md-6">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold mb-4">
+
+                            <i class="fas fa-server text-primary me-2"></i>
+
+                            Backend Development
+
+                        </h5>
+
+                        <ul class="list-group list-group-flush">
+
+                            <li class="list-group-item px-0">
+                                <strong>Spring MVC</strong>
+                                <span class="text-muted">
+                                    - Handles web requests and application flow.
+                                </span>
+                            </li>
+
+                            <li class="list-group-item px-0">
+                                <strong>Spring Data JPA</strong>
+                                <span class="text-muted">
+                                    - Simplifies database operations and persistence.
+                                </span>
+                            </li>
+
+                            <li class="list-group-item px-0">
+                                <strong>Spring Security</strong>
+                                <span class="text-muted">
+                                    - Manages authentication and authorization.
+                                </span>
+                            </li>
+
+                            <li class="list-group-item px-0">
+                                <strong>Thymeleaf</strong>
+                                <span class="text-muted">
+                                    - Renders dynamic HTML pages.
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Frontend -->
+            <div class="col-md-6">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold mb-4">
+
+                            <i class="fas fa-desktop text-success me-2"></i>
+
+                            Frontend Development
+
+                        </h5>
+
+                        <ul class="list-group list-group-flush">
+
+                            <li class="list-group-item px-0">
+                                <strong>HTML5</strong>
+                                <span class="text-muted">
+                                    - Structures the web pages.
+                                </span>
+                            </li>
+
+                            <li class="list-group-item px-0">
+                                <strong>CSS3</strong>
+                                <span class="text-muted">
+                                    - Provides styling and visual customization.
+                                </span>
+                            </li>
+
+                            <li class="list-group-item px-0">
+                                <strong>Bootstrap</strong>
+                                <span class="text-muted">
+                                    - Creates responsive layouts and components.
+                                </span>
+                            </li>
+
+                            <li class="list-group-item px-0">
+                                <strong>Thymeleaf</strong>
+                                <span class="text-muted">
+                                    - Integrates backend data into HTML templates.
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Database Configuration -->
+    <section class="bg-body-tertiary py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="fw-bold">
+                    Database Configuration
+                </h2>
+
+                <p class="text-muted">
+                    The application supports two database configurations.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- H2 -->
+                <div class="col-md-6">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                        <div class="card-body p-4">
+
+                            <span class="badge bg-success mb-3">
+                                Default Configuration
+                            </span>
+
+                            <h5 class="fw-bold">
+                                <i class="fas fa-database me-2"></i>
+                                H2 Database
+                            </h5>
+
+                            <p class="text-muted">
+                                The project uses H2 as its default
+                                database configuration.
+                            </p>
+
+                            <ul class="text-muted">
+
+                                <li>Easy setup and configuration</li>
+
+                                <li>Suitable for development and testing</li>
+
+                                <li>H2 Console for database inspection</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MySQL -->
+                <div class="col-md-6">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                        <div class="card-body p-4">
+
+                            <span class="badge bg-primary mb-3">
+                                Alternative Configuration
+                            </span>
+
+                            <h5 class="fw-bold">
+                                <i class="fas fa-database me-2"></i>
+                                MySQL Database
+                            </h5>
+
+                            <p class="text-muted">
+                                MySQL can be used as an alternative
+                                database by configuring the application
+                                datasource.
+                            </p>
+
+                            <ul class="text-muted">
+
+                                <li>Install and start MySQL Server</li>
+
+                                <li>Configure the datasource URL</li>
+
+                                <li>Set the database username and password</li>
+
+                                <li>Disable the H2 configuration</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Security -->
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Security & Authentication
+            </h2>
+
+            <p class="text-muted">
+                Two authentication strategies are available
+                through the Spring Security configuration.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- In Memory -->
+            <div class="col-md-6">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold">
+
+                            <i class="fas fa-memory text-primary me-2"></i>
+
+                            In-Memory Authentication
+
+                        </h5>
+
+                        <span class="badge bg-success mb-3">
+                            Default Strategy
+                        </span>
+
+                        <p class="text-muted">
+                            User details are stored directly in memory
+                            using Spring Security's in-memory
+                            authentication mechanism.
+                        </p>
+
+                        <p class="text-muted mb-0">
+                            This configuration is convenient for
+                            development and demonstration purposes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Database -->
+            <div class="col-md-6">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold">
+
+                            <i class="fas fa-database text-success me-2"></i>
+
+                            Database-Based Authentication
+
+                        </h5>
+
+                        <span class="badge bg-primary mb-3">
+                            Alternative Strategy
+                        </span>
+
+                        <p class="text-muted">
+                            User details are retrieved from the
+                            application's database through a
+                            custom UserDetailsService implementation.
+                        </p>
+
+                        <p class="text-muted mb-0">
+                            This approach allows user information
+                            to be managed and persisted in the
+                            database.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Roles -->
+    <section class="bg-body-tertiary py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="fw-bold">
+                    User Roles & Permissions
+                </h2>
+
+                <p class="text-muted">
+                    Access to patient management features
+                    depends on the user's assigned role.
+                </p>
+
+            </div>
+
+            <div class="row justify-content-center g-4">
+
+                <!-- User -->
+                <div class="col-md-5">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                        <div class="card-body p-4">
+
+                            <div class="mb-3">
+
+                                <span class="badge bg-info">
+                                    USER
+                                </span>
+
+                            </div>
+
+                            <h5 class="fw-bold">
+                                Regular User
+                            </h5>
+
+                            <p class="text-muted">
+                                Regular users can access patient
+                                information and update existing
+                                patient records.
+                            </p>
+
+                            <ul class="list-unstyled mb-0">
+
+                                <li class="mb-2">
+
+                                    <i class="fas fa-check text-success me-2"></i>
+
+                                    View patient list
+
+                                </li>
+
+                                <li class="mb-2">
+
+                                    <i class="fas fa-check text-success me-2"></i>
+
+                                    Modify patient information
+
+                                </li>
+
+                                
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Admin -->
+                <div class="col-md-5">
+
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                        <div class="card-body p-4">
+
+                            <div class="mb-3">
+
+                                <span class="badge bg-danger">
+                                    ADMIN
+                                </span>
+
+                            </div>
+
+                            <h5 class="fw-bold">
+                                Administrator
+                            </h5>
+
+                            <p class="text-muted">
+                                Administrators have access to all
+                                patient management operations.
+                            </p>
+
+                            <ul class="list-unstyled mb-0">
+
+                                <li class="mb-2">
+
+                                    <i class="fas fa-check text-success me-2"></i>
+
+                                    View patient list
+
+                                </li>
+
+                                <li class="mb-2">
+
+                                    <i class="fas fa-check text-success me-2"></i>
+
+                                    Modify patient information
+
+                                </li>
+
+                                <li class="mb-2">
+
+                                    <i class="fas fa-check text-success me-2"></i>
+
+                                    Add new patients
+
+                                </li>
+
+                                <li>
+
+                                    <i class="fas fa-check text-success me-2"></i>
+
+                                    Delete patients
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Project Conclusion -->
+    <section class="container py-5">
+
+        <div class="card border-0 shadow-sm rounded-4">
+
+            <div class="card-body text-center p-4 p-lg-5">
+
+                <div class="text-primary mb-3">
+
+                    <i class="fas fa-code fa-2x"></i>
+
+                </div>
+
+                <h2 class="fw-bold">
+                    Built to Learn and Improve
+                </h2>
+
+                <p class="text-muted mx-auto"
+                   style="max-width: 700px;">
+
+                    This project is an opportunity to explore
+                    full-stack Java development, database
+                    integration, web application security,
+                    and server-side rendering.
+
+                    It demonstrates how different Spring
+                    technologies work together to build
+                    a functional and maintainable web application.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>

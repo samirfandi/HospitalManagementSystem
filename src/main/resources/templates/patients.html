@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patients</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div layout:fragment="content">
+
+
+         <div class="p-3 m-3">
+        <div class="card">
+            <div class="card-header"> List of patients </div>
+            <div class="card-body">
+
+
+
+
+                <nav class="navbar navbar-light bg-light">
+                    <form method="get" th:action="@{/user/index}" class="d-flex justify-content-center gap-2 w-100">
+                        <input type="search"
+                            name="keyword"
+                            th:value="${currentKeyword}"
+                            class="form-control "
+                            style="width: 20%;"
+                            placeholder="Search"
+                            aria-label="Search"/>
+                        <button class="btn btn-outline-success my-2 my-sm-0"> Search </button>
+                    </form>
+                </nav>
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th> <th>First name</th> <th>Last name</th> <th>Date of birth</th> <th>Sick</th> <th>Score</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="p:${listePatients}">
+                
+                            <td th:text="${p.id}"></td>
+                             <td th:text="${p.nom}"></td>
+                             <td th:text="${p.prenom}"></td>
+                            <td th:text="${#dates.format(p.dateNaissance, 'yyyy-MM-dd')}"></td>
+                            <td th:text="${p.malade}"></td>
+                            <td th:text="${p.score}"></td>
+                            
+                            <td >
+                                 <a  class="btn btn-info" th:href="@{/user/updatePatient(id=${p.id})}" > Modify</a> 
+                            </td>  
+
+                            <td th:if="${#authorization.expression('hasRole(''ADMIN'')')}">
+                                 <a onclick="return confirm('Etes-vous sure ?');"  class="btn btn-danger" th:href="@{/admin/deletePatient(id=${p.id},keyword=${currentKeyword}, page=${currentPage})}" > Delete</a> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="nav nav-pills justify-content-center">
+                    <li th:each="v,status:${pages}"    >
+                        <a th:text="${status.index}" th:class="${status.index==currentPage?'btn btn-secondary m-2':'btn btn-outline-secondary m-1'}"  th:href="@{/user/index(page=${status.index}, keyword=${currentKeyword})}"> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+   
+   
+    
+</body>
+</html>
