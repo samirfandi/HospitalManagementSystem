@@ -145,13 +145,13 @@ For the MySQL configuration, you also need MySQL Server.
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone git@github.com:samirfandi/HospitalManagementSystem.git
 ```
 
 ### 2. Navigate to the project directory
 
 ```bash
-cd <YOUR_PROJECT_DIRECTORY>
+cd hospital/
 ```
 
 ### 3. Run the application
