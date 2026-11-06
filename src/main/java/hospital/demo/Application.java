@@ -33,12 +33,12 @@ public class Application {
 	public CommandLineRunner start1(){
 		return args -> {
 
-			Patient p1 = new Patient(null, "Samir", "FANDI", new Date(), false, 230);
-			Patient p2 = new Patient(null, "Ahmed", "ANIS", new Date(), true, 344);
-			Patient p3 = new Patient(null, "Amir", "ETALEB", new Date(), false, 663);
-			Patient p4 = new Patient(null, "Souad", "BAHI", new Date(), false, 230);
-			Patient p5 = new Patient(null, "Hiba", "RACHID", new Date(), true, 344);
-			Patient p6 = new Patient(null, "Aymen", "SAKHI", new Date(), false, 663);
+			Patient p1 = new Patient(null, "James", "MILLER", new Date(), false, 230);
+			Patient p2 = new Patient(null, "Emma", "WILSON", new Date(), true, 344);
+			Patient p3 = new Patient(null, "Lucas", "DUPONT", new Date(), false, 663);
+			Patient p4 = new Patient(null, "Chloé", "MOREAU", new Date(), false, 230);
+			Patient p5 = new Patient(null, "Sophie", "MARTIN", new Date(), true, 344);
+			Patient p6 = new Patient(null, "Michael", "JOHNSON", new Date(), false, 663);
 			
 			patientRepository.save(p1);
 			patientRepository.save(p2);
